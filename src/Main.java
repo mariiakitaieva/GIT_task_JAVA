@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main (String[] ags){
+    for (int i=1; i<11; i++){
+        int a=3;
+        System.out.println(i+"*"+a+"="+(a*i));
+        }
+        System.out.println();
+    first();
+    second();
+    third();
+    last();
+    }
+
+   public static void first(){
+        int q=6;
+        while(q>0){
+            q--;System.out.print(q+" ");
+        };
+        System.out.println();
+    };
+
+    public static void second(){
+        System.out.println("Введите число 1, 2 или 3: ");
+        Scanner inputFigure = new Scanner(System.in);
+        int s = inputFigure.nextInt();
+        if (s==3){System.out.println(3);}
+        else if (s==2){System.out.println(2);}
+        else if (s==1){System.out.println(1);};
+    };
+
+    public static void third(){
+        System.out.println("Введите число 1, 2 или 3: ");
+        Scanner inputFigure = new Scanner(System.in);
+        int z = inputFigure.nextInt();
+        switch(z){
+            case 1:
+                System.out.println("1"); break;
+            case 2:
+                System.out.println("2"); break;
+            case 3:
+                System.out.println("3"); break;
+        }
+    };
+    public static void last() {
+        double i =100;
+        double sum = (i)*(i+1)/2/i;
+        System.out.println("average= "+sum);
+        }
+};
+
+
